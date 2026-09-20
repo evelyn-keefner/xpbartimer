@@ -1,4 +1,4 @@
-# setTimerPosition(Player player, Double seconds)
+# setTimerPosition(Player player, Float seconds)
 @fast 
 @bypass /xp set {{player.string()}} {{xpbartimer::getLevelNumberFromSeconds(seconds)}} levels
 @bypass /xp set {{player.string()}} {{xpbartimer::getPointsNumberFromSeconds(seconds)}} points

@@ -1,13 +1,13 @@
 @namespace xpbartimer
     
-    Double ticksToSeconds(Int ticks)
-    Int secondsToTicks(Double seconds)
+    Float ticksToSeconds(Int ticks)
+    Int secondsToTicks(Float seconds)
 
     createTimer(Player player, Int ticks, Boolean forward)
 
-    setTimerPosition(Player player, Double seconds)
+    setTimerPosition(Player player, Float seconds)
 
     Int getXPPointsForLevel(Int visual_level)
-    Int getLevelNumberFromSeconds(Double seconds)
-    Int getPointsNumberFromSeconds(Double seconds)
+    Int getLevelNumberFromSeconds(Float seconds)
+    Int getPointsNumberFromSeconds(Float seconds)
 @endnamespace

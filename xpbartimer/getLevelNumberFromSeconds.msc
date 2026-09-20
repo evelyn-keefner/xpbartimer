@@ -1,4 +1,4 @@
-# Int getLevelNumberFromSeconds(double seconds)
+# Int getLevelNumberFromSeconds(Float seconds)
 @fast
 
 @return Int(seconds)
