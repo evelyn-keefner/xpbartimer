@@ -1,0 +1,4 @@
+# Int getLevelNumberFromSeconds(double seconds)
+@fast
+
+@return Int(seconds)

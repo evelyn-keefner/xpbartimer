@@ -1,0 +1,11 @@
+# Int getXPPointsForLevel(Int visual_level)
+@fast
+
+# source: https://minecraft.wiki/w/Experience#Leveling_up
+@if visual_level <= 15
+    @return 2 * visual_level + 7 - 1
+@elseif visual_level >= 16 && visual_level <= 30
+    @return 5 * visual_level - 38 - 1
+@elseif visual_level >= 31
+    @return 9 * visual_level - 158 - 1
+@fi

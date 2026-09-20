@@ -1,0 +1,21 @@
+# createTimer(Player player, Int ticks, Boolean forward)
+@fast
+
+@if forward
+    @for Int i in list::range(0, ticks)
+        @slow
+        @delay 1
+        @fast
+        @var xpbartimer::setTimerPosition(player, xpbartimer::ticksToSeconds(i))
+    @done
+@else
+    @define Int[] range = list::range(0, ticks)
+    @var range.reverse()
+
+    @for Int i in range 
+        @slow
+        @delay 1
+        @fast
+        @var xpbartimer::setTimerPosition(player, xpbartimer::ticksToSeconds(i))
+    @done
+@fi

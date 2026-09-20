@@ -1,0 +1,3 @@
+# Int secondsToTicks(Int seconds)
+
+@return Int(seconds * 20)

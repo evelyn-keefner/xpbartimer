@@ -1,0 +1,6 @@
+# Int getPointsNumberFromSeconds(Double seconds)
+@fast
+
+@define Double fractional_second_time = seconds - (1.0 * xpbartimer::getLevelNumberFromSeconds(seconds))
+@define Int maxPointsNeeded = xpbartimer::getXPPointsForLevel(xpbartimer::getLevelNumberFromSeconds(seconds))
+@return Int((1.0 * maxPointsNeeded) * fractional_second_time)
